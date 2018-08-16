@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbershop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
@@ -38,7 +41,7 @@
 					<ul>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" >	
-							<label for="filter=baxter-of-california">Baxter of California</label>
+							<label for="filter-baxter-of-california">Baxter of California</label>
 						</li>
 
 						<li class="filter-option">
@@ -57,7 +60,7 @@
 
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murray’s" id="filter-murray’s">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murray’s" id="filter-murray’s"disabled>
 							<label for="filter-murray’s">Murray’s</label>
 
 						</li>
@@ -180,20 +183,20 @@
 			</ul>
 			<ul class="pagination-list">
 				<li class="pagination-item"><a href="#">1</a></li>
-				<li class="pagination-item"><a>2</a></li>
+				<li class="pagination-item-current"><a>2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item"><a href="#">4</a></li>
 			</ul>
 		</section>
 	</main>
 
-	<footer main-footer>
+	<footer class="main-footer">
 			<p class="footer-contacts">Барбершоп «Бородинский»<br>
 			 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д. 19/8.<br>
 			 <a href="#">Как нас найти?</a><br>
 			 ТЕЛЕФОН: +7 (495) 666-02-66.</p>
 
-			 <div>
+			 <div class="footer-social">
 			 	<b>Давайте дружить!</b>
 			 	<ul>
 			 	<li class="social-button"><a href="#"></a>Vkonakte</li>

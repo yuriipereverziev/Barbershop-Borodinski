@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbershop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -28,97 +31,99 @@
 		<section class="features">
 			<h2 class="visually-hidden">Преимущества</h2>
 			<ul class="features-list">
-				<li class="features-item">
+				<li class="feature-item">
 					<h3>Быстро</h3>
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
 				</li>
 
-				<li class="features-item">
+				<li class="feature-item">
 					<h3>Круто</h3>
 					<p>Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
 				</li>
 
-				<li class="features-item">
+				<li class="feature-item">
 					<h3>Дорого</h3>
 					<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
 				</li>
 			</ul>
 		</section>
+		
+		<div class="index-columns">
+			<section class="news">
+				<h3>Новости</h3>
+				<ul class="news-list">
+					<li class="news-item">
+						<p>Нам наконец завезли Егермейстер! Теперь вы можете пропустить стаканчик во. время стрижки</p>
+						<time datetime="2016-11-01">11 января</time>
+					</li>
+					<li class="news-item">
+						<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.</p>
+						<time datetime="2016-11-18">18 января</time>
+					</li>
+				</ul>
+			</section>
 
-		<section class="news">
-			<h3>Новости</h3>
-			<ul class="news-list">
-				<li class="news-item">
-					<p>Нам наконец завезли Егермейстер! Теперь вы можете пропустить стаканчик во. время стрижки</p>
-					<time datetime="2016-11-01">11 января</time>
-				</li>
-				<li class="news-item">
-					<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды.</p>
-					<time datetime="2016-11-18">18 января</time>
-				</li>
-			</ul>
-		</section>
+			<section class="galery">
+				<h3>Фотогалерея</h3>
+				<figure class="galery-content">
+					<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер Барбершопа"></a>
+				</figure>
+				<button class="button galery-button galery-button-back">Назад</button>
+				<button class="button galery-button galery-button-next">Вперед</button>
+			</section>
+		
 
-		<section class="galery">
-			<h3>Фотогалерея</h3>
-			<figure class="galery-content">
-				<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер Барбершопа"></a>
-			</figure>
-			<button class="button galery-button galery-button-back">Назад</button>
-			<button class="button galery-button galery-button-next">Вперед</button>
-		</section>
+			<section class="contacts">
+				<h3>Контактная информация</h3>
+				<p>Барбершоп «Бородинский»<br>
+				 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д. 19/8.<br>ТЕЛЕФОН: +7 (495) 666-02-66.</p>
+				 <p>
+				 ВРЕМЯ РАБОТЫ: <br>
+				ПН—ПТ: С 10:00 ДО 22:00<br>
+				СБ—ВС: С 10:00 ДО 19:00
+				 </p>
+				 <a class="button" href="#">Как проехать</a>
+				 <a class="button" href="#">Обратная связь</a>
+			</section>
 
-		<section class="contacts">
-			<h3>Контактная информация</h3>
-			<p>Барбершоп «Бородинский»<br>
-			 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д. 19/8.<br>ТЕЛЕФОН: +7 (495) 666-02-66.</p>
-			 <p>
-			 ВРЕМЯ РАБОТЫ: <br>
-			ПН—ПТ: С 10:00 ДО 22:00<br>
-			СБ—ВС: С 10:00 ДО 19:00
-			 </p>
-			 <a class="button" href="#">Как проехать</a>
-			 <a class="button" href="#">Обратная связь</a>
-		</section>
+			<section class="appointment">
+				<h3>Записаться</h3>
+				<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 
-		<section class="appointment">
-			<h3>Записаться</h3>
-			<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="appointment-item">
+						<label for="appointment-date">Дата</label>
+						<input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+					</p>
 
-			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="appointment-item">
-					<label for="appointment-date">Дата</label>
-					<input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
-				</p>
+					<p class="appointment-item">
+						<label for="appointment-time">Время</label>
+						<input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+					</p>
 
-				<p class="appointment-item">
-					<label for="appointment-time">Время</label>
-					<input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-				</p>
+					<p class="appointment-item">
+						<label for="appointment-name">Имя</label>
+						<input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+					</p>
 
-				<p class="appointment-item">
-					<label for="appointment-name">Имя</label>
-					<input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-				</p>
-
-				<p class="appointment-item">
-					<label for="appointment-phone">Телефон</label>
-					<input id="appointment-phone" type="text" name="phone" value="" placeholder="+7 123 456-789-90">
-				</p>
-				<button class="button" type="submit">
-					Отправить
-				</button>
-			</form>
-
-		</section>
+					<p class="appointment-item">
+						<label for="appointment-phone">Телефон</label>
+						<input id="appointment-phone" type="text" name="phone" value="" placeholder="+7 123 456-789-90">
+					</p>
+					<button class="button" type="submit">
+						Отправить
+					</button>
+				</form>
+			</section>
+		</div>	
 	</main>
-	<footer main-footer>
+	<footer class="main-footer">
 			<p class="footer-contacts">Барбершоп «Бородинский»<br>
 			 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д. 19/8.<br>
 			 <a href="#">Как нас найти?</a><br>
 			 ТЕЛЕФОН: +7 (495) 666-02-66.</p>
 
-			 <div>
+			 <div class="footer-social">
 			 	<b>Давайте дружить!</b>
 			 	<ul>
 			 	<li class="social-button"><a href="#"></a>Vkonakte</li>
@@ -158,7 +163,7 @@
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Как до нас добраться?</h2>
 			<p>
-				<img src="map.jpg" width="789" height="560" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт Петербург">
+				<img src="img/map.jpg" width="789" height="560" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт Петербург">
 			</p>
 			<button class="modal-close">Закрыть</button>
 		</section>
