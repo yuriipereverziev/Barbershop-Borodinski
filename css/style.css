@@ -15,6 +15,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .inner-page {
 	color: #000000;
 
@@ -46,17 +52,76 @@ a {
 	background-color: #663d15;
 }
 
-.main-navigation {
-	font-size: 16px;
-	line-height: 20px;
-	color: #ffffff;
+.main-header {
+	margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+	margin-bottom: 60px;
 
 	background-color: #000000;
 }
 
-.site-navigation,
-.user-navigation {
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.inner-page .main-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.main-header-logo {
+	order: 2;
+
+	width: 371px;
+	height: 155px;
+}
+
+.inner-page .main-header-logo {
+	order: 0;
+
+	width: 111px;
+	height: 24px;
+	padding: 23px 20px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+
+	background-color: #000000;
+}
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}	
+
+.site-navigation {
+	width: 620px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.user-navigation {
+	width: 140px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.iner-page .user-navigation {
+	margin-left: auto;
 }
 
 .site-navigation a,
@@ -71,29 +136,66 @@ a {
 	background-color: #242424;
 }
 
+.features {
+	margin-bottom: 80px;
+}
+
 .features-list {
+	display: flex;
+	justify-content: space-between;
+	min-height: 170px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+	
 }
 
 .feature-item {
+	width: 300px;
 	text-align: center;
 }
 
 .feature-item h3 {
 	font-size: 30px;
 }
-.index-columns {
+
+.index-columns h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.columns-news {
+	display: flex;
+	justify-content: space-between;	
+	padding: 60px 80px;
+	margin-bottom: 	35px;
+
 	color: #000000;
 
 	background-color: #f8f5f2;
 	background-image: url(../img/pattern-light.jpg);
 	background-position: 0 0;
-	background-repeat: repeat;
+	background-repeat: repeat;	
 }
 
-.index-columns h2 {
-	font-size: 20px;
-	line-height: 42px;
+.columns-contacts {
+	display: flex;
+	justify-content: space-between;	
+	padding: 60px 80px;
+	margin-bottom: 70px;
+	
+
+	color: #000000;
+
+	background-color: #f8f5f2;
+	background-image: url(../img/pattern-light.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;	
+}
+
+.news {
+	width: 380px;
 }
 
 .news-list {
@@ -104,11 +206,22 @@ a {
 	text-transform: none;
 }
 
+.galery {
+	width: 300px;
+}
+
 .galery-content {
 	background-color: #cccccc;
 	border: 7px solid #ffffff;
 }
 
+.contacts {
+	width: 380px;	
+}
+
+.appointment {
+	width: 	300px;
+}
 .appointment-item input {
 	font: inherit;
 
@@ -121,11 +234,19 @@ a {
 }
 
 .page-title {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	
 	font-size: 30px;
 	line-height: 42px;
 }
 
 .breadcrumps {
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -142,7 +263,18 @@ a {
 	color: #aba9a7;
 }
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters {
+	width: 180px;
+}
+
 .filter fieldset {
+	margin: 0;
+	padding: 0;
 	border: none;
 }
 
@@ -156,6 +288,10 @@ a {
 	line-height: 18px;
 }
 
+.filter-option {
+	margin-bottom: 20px;
+}
+
 .filter-input:hover + label,
 .filter-input:focus + label {
 	color: #663d15;
@@ -166,13 +302,29 @@ a {
 	opacity: 0.5;
 }
 
+.catalog {
+	width: 700px;
+}
+
 .catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
 	list-style: none;
 }
 
 .catalog-item {
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
 	background-color: #f8f8f8;
 	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -201,6 +353,9 @@ a {
 }
 
 .pagination-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -229,6 +384,10 @@ a {
 	color: #ffffff;
 }
 
+.product-photo {
+	width: 460px;
+}
+
 .product-photo-preview {
 	list-style: none;
 }
@@ -251,6 +410,10 @@ a {
 	text-align: center;
 }
 
+.product-info {
+	width: 390px;
+}
+
 .product-info h3 {
 	font-size: 24px;
 	line-height: 30px;
@@ -261,12 +424,27 @@ a {
 }
 
 .main-footer {
+	padding: 60px 0;
 	color: #ffffff;
-
+	
 	background-color: #212121;
 	background-image: url("../img/pattern-night.jpg");
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+	margin-top: 45px;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-contacts {
+	margin: 0;
+	width: 320px;
+	margin-right: 80px;
 }
 
 .foter-contacts a {
@@ -280,6 +458,7 @@ a {
 }
 
 .footer-social {
+	width: 145px;
 	text-align: center;
 }
 
@@ -292,7 +471,9 @@ a {
 }
 
 .footer-copyright {
+	width: 150px;
 	text-align: center;
+	margin-left: auto;
 }
 
 .footer-copyright .button:hover,
